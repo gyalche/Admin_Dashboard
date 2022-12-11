@@ -10,6 +10,9 @@ import generalRoutes from './routes/general.js';
 import managementRoutes from './routes/management.js';
 import salesRoutes from './routes/sales.js';
 import mongoConnection from './DB/db.js';
+
+
+
 /**configuration */
 dotenv.config();
 
