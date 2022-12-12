@@ -4,8 +4,7 @@ import { themeSettings } from 'theme';
 import { useSelector } from 'react-redux';
 import { useMemo } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-// import Layout from 'scenes/layout/Layout';
-// import Dashboard from 'scenes/dashboard/Dashboard';
+import Products from 'scenes/products';
 import Dashboard from 'scenes/dashboard';
 import Layout from 'scenes/layout';
 function App() {
@@ -21,6 +20,7 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/products" element={<Products />} />
             </Route>
           </Routes>
         </ThemeProvider>

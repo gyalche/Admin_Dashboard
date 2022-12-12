@@ -8,11 +8,11 @@ export const getProducts = async (req, res, next) => {
     const productWithStats = await Promise.all(
       product.map(async (product) => {
         const stat = await ProductStat.find({ productId: product._id });
-        return {
+        return { 
           ...product._doc,
           stat,
         };
-      }) 
+      })
     );
     res.status(200).json(productWithStats);
   } catch (error) {
