@@ -11,8 +11,6 @@ import managementRoutes from './routes/management.js';
 import salesRoutes from './routes/sales.js';
 import mongoConnection from './DB/db.js';
 
-
-
 /**configuration */
 dotenv.config();
 
@@ -26,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 //mongodb connection;
-mongoConnection;
+mongoConnection();
 /*ROUTES */
 app.use('client', clientRoutes);
 app.use('/general', generalRoutes);

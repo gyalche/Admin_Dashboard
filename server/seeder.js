@@ -1,18 +1,18 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import mongoConnection from './DB/db.js';
-import User from './models/user.js';
+import user from './models/user.js';
 import { dataUser } from './data/index.js';
 
 //config;
 dotenv.config();
-mongoConnection;
+mongoConnection();
 
 //function seeder;
 const importData = async () => {
   try {
     // await User.deleteMany();
-    const user = await User.insertMany(dataUser);
+    const data = await user.insertMany(dataUser);
     console.log(`All items added`);
     process.exit();
   } catch (error) {
