@@ -2,9 +2,6 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config();
 mongoose.set('strictQuery', true);
-//data import;
-
-import { dataUser } from '../data/index.js';
 
 const mongoConnection = async () => {
   try {
