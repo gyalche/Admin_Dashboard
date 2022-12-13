@@ -19,7 +19,7 @@ const importData = async () => {
     // await Product.insertMany(dataProduct);
 
     //inserting in productstat;
-    await ProductStat.insertMany(dataProductStat);
+    // await ProductStat.insertMany(dataProductStat);
 
     console.log(`All items added`);
     process.exit();
