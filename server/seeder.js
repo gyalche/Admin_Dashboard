@@ -26,11 +26,11 @@ const importData = async () => {
     // //inserting in product;
     // await Product.insertMany(dataProduct);
 
-    //inserting in productstat;
-    // await ProductStat.insertMany(dataProductStat);
-
     //insert in transactions;
     // await Transaction.insertMany(dataTransaction);
+
+    //inserting in productstat;
+    // await ProductStat.insertMany(dataProductStat);
 
     //insert into overallStat;
     await OverallStat.insertMany(dataOverallStat);
