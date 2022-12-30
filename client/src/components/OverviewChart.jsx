@@ -90,6 +90,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
       curve="catmullRom"
       axisTop={null}
       axisRight={null}
+      enableArea={isDashboard}
       axisBottom={{
         format: (v) => {
           if (isDashboard) return v.slice(0, 3);
